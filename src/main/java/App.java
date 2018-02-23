@@ -58,10 +58,10 @@ public class App {
 
     public static void main(String[] args) {
 		App appObj = new App();
-		if(args.length<1||args.length>1){
+		if(args.length<1){
 			System.out.println("Please input at least number as the program argument");
 		}else if(args.length==1){
-			System.out.println(appObj.first(Integer.parseInt(args[0])));
+			System.out.println(appObj.isPrime(Integer.parseInt(args[0])));
 		}
 		else if(args.length==2){
 			System.out.println(appObj.two(Integer.parseInt(args[0]),Integer.parseInt(args[0])));
