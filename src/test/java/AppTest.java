@@ -39,6 +39,11 @@ public class AppTest {
 	@Test
 	public void test2(){
 		App appObj = new App();
-		assertSame(appObj.two(2,11),5);
+		assertEquals(appObj.two(2,11),5);
+	}
+	@Test
+	public void test3(){
+		App appObj = new App();
+		assertEquals(appObj.three(new int[]{2,3,5,7,9,11}),5);
 	}
 }
