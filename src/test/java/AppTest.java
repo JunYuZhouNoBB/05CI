@@ -31,4 +31,10 @@ public class AppTest {
 		App appObj = new App();
 		assertEquals(appObj.isPrime(32416189051L),false);
 	}
+	@Test
+	public void test1(){
+		App appObj = new App();
+		assertEquals(appObj.factors(2),2);
+	}
+	
 }

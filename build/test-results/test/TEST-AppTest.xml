@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-02-23T08:42:44" hostname="DESKTOP-RG5AR5M" time="0.004">
+<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-02-23T13:35:56" hostname="DESKTOP-RG5AR5M" time="0.006">
   <properties/>
   <testcase name="testSmallNoPrime" classname="AppTest" time="0.001"/>
+  <testcase name="test1" classname="AppTest" time="0.0"/>
   <testcase name="testSmallPrime" classname="AppTest" time="0.0"/>
   <testcase name="testLargeNoPrime" classname="AppTest" time="0.0"/>
   <testcase name="testAppHasAGreeting" classname="AppTest" time="0.0"/>
-  <testcase name="testLargePrime" classname="AppTest" time="0.002"/>
+  <testcase name="testLargePrime" classname="AppTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

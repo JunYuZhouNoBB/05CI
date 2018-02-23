@@ -6,22 +6,41 @@ public class App {
         return "Hello world.";
     }
 	public boolean isPrime(long number){
-		double max = Math.sqrt(number)+1;
-		if(number == 2){
-			return true;
-		}
-		if(number%2 == 2){
+
+		if (number < 1) {
 			return false;
-		}
-		for(long i=3;i<max;i+=2){
-			if(number%i == 0){
-				return false;
+		} else {
+			for (int i = 2; i <= Math.sqrt(number); i++) {
+				if (number % i == 0) {
+					return false;
+				}
 			}
 		}
 		return true;
 	}
+	
+	public int factors(int number){
+		if(number==1){
+			return 1;
+		}else {
+			return number*factors(number-1);
+		}
+	}
+	public int two(int number,int number2){
+		int min = number<number2? number:number2;
+		int max = number>number2? number:number2;
+		int count = 0;
+		for(;min<max;min++){
+			if(isPrime(min)){
+				count++;
+			}
+		}
+		return count;
+	}
+	
 
     public static void main(String[] args) {
+
 		if(args.length<1||args.length>1){
 			System.out.println("Please input a number as the program argument");
 		}
@@ -29,5 +48,6 @@ public class App {
 		long input = Long.parseLong(args[0]);
 		System.out.println(appObj.isPrime(input));
         System.out.println(new App().getGreeting());
+
     }
 }
