@@ -39,6 +39,6 @@ public class AppTest {
 	@Test
 	public void test2(){
 		App appObj = new App();
-		assertEquals(appObj.two(1,5),1);
+		assertEquals(appObj.two(2,11),5);
 	}
 }

@@ -6,16 +6,17 @@ public class App {
         return "Hello world.";
     }
 	public boolean isPrime(long number){
+
 		if (number < 1) {
 			return false;
 		} else {
 			for (int i = 2; i <= Math.sqrt(number); i++) {
 				if (number % i == 0) {
-					return true;
+					return false;
 				}
 			}
 		}
-		return false;
+		return true;
 	}
 	
 	public int factors(int number){
