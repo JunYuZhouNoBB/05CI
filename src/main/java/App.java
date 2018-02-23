@@ -20,6 +20,15 @@ public class App {
 		}
 		return true;
 	}
+	
+	publi long factors(long number){
+		if(number==1){
+			return 1;
+		}else {
+			return number*factors(number-1);
+		}
+	}
+	
 
     public static void main(String[] args) {
 		if(args.length<1||args.length>1){
