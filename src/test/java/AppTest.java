@@ -36,5 +36,9 @@ public class AppTest {
 		App appObj = new App();
 		assertEquals(appObj.factors(2),2);
 	}
-	
+	@Test
+	public void test2(){
+		App appObj = new App();
+		assertSame(appObj.two(2,11),5);
+	}
 }

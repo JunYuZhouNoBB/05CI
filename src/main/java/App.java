@@ -27,11 +27,12 @@ public class App {
 		}
 	}
 	public int two(int number,int number2){
-		int min = number<number2? number:number2;
-		int max = number>number2? number:number2;
+		int min = number < number2 ? number : number2;
+		int max = number > number2 ? number : number2;
 		int count = 0;
-		for(;min<max;min++){
-			if(isPrime(min)){
+		for (int i = min; i <= max; i++) {
+			if (isPrime(i)) {
+
 				count++;
 			}
 		}
@@ -41,13 +42,13 @@ public class App {
 
     public static void main(String[] args) {
 
-		if(args.length<1||args.length>1){
+		/*if(args.length<1||args.length>1){
 			System.out.println("Please input a number as the program argument");
-		}
+		}*/
 		App appObj = new App();
-		long input = Long.parseLong(args[0]);
-		System.out.println(appObj.isPrime(input));
-        System.out.println(new App().getGreeting());
-
+		//long input = Long.parseLong(args[0]);
+		//System.out.println(appObj.isPrime(input));
+        //System.out.println(new App().getGreeting());
+		System.out.println(appObj.two(2,11));
     }
 }
