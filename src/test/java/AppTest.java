@@ -5,6 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class AppTest {
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
@@ -34,7 +37,8 @@ public class AppTest {
 	@Test
 	public void test1(){
 		App appObj = new App();
-		assertEquals(appObj.factors(2),2);
+		List<Integer> list = Arrays.asList(2,2,3);
+		assertEquals(appObj.first(12),list);
 	}
 	@Test
 	public void test2(){
