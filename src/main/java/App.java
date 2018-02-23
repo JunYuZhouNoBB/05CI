@@ -28,6 +28,17 @@ public class App {
 			return number*factors(number-1);
 		}
 	}
+	publi int two(long number,long number2){
+		int min = number<number2? number:number2;
+		int max = number>number2? number:number2;
+		int count = 0;
+		for(;min<max;min++){
+			if(isPrime(min)){
+				count++;
+			}
+		}
+		return count;
+	}
 	
 
     public static void main(String[] args) {
