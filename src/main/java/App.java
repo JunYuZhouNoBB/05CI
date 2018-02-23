@@ -60,7 +60,10 @@ public class App {
 		App appObj = new App();
 		if(args.length<1||args.length>1){
 			System.out.println("Please input at least number as the program argument");
-		}else if(args.length==2){
+		}else if(args.length==1){
+			System.out.println(appObj.first(Integer.parseInt(args[0])));
+		}
+		else if(args.length==2){
 			System.out.println(appObj.two(Integer.parseInt(args[0]),Integer.parseInt(args[0])));
 		}else if(args.length>2){
 			int arr[] = new int[args.length];
