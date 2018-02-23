@@ -62,6 +62,7 @@ public class App {
 			System.out.println("Please input at least number as the program argument");
 		}else if(args.length==1){
 			System.out.println(appObj.isPrime(Integer.parseInt(args[0])));
+			System.out.println(appObj.first(Integer.parseInt(args[0])));
 		}
 		else if(args.length==2){
 			System.out.println(appObj.two(Integer.parseInt(args[0]),Integer.parseInt(args[0])));
